@@ -94,22 +94,24 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name=" Assalamualaikum and"
+        name=" Assalamualaikum dan"
         if (hrs < 12)
-            greet = name+ '  Good Morning  ';
+            greet = name+ '  Selamat Pagi  ';
         else if (hrs >= 12 && hrs <= 17)
-            greet = name+'  Good Afternoon ';
-        else if (hrs >= 17 && hrs <= 24)
-            greet = name+'  Good Evening  ';
+            greet = name+'  Selamat Tengah Hari ';
+        else if (hrs >= 17 && hrs <= 20)
+            greet = name+'  Selamat Petang  ';
+        else if (hrs >= 20 && hrs <= 24)
+            greet = name+'  Selamat Malam  ';
         document.getElementById('greet').innerHTML = greet;
 
     }
 
     function dispalyDate(today) {  
        
-        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+        const days = ['Ahad', 'Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu'];
+        const monthNames = ["Januari", "Februari", "Mac", "April", "Mei", "Jun",
+  "Julai", "Ogos", "September", "Oktober", "November", "Disember"
 ];
 
         var dayName = days[today.getDay()];
